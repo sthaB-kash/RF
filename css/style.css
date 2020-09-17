@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Nosifer&family=New+Rocker&family=Monoton&family=Berkshire+Swash&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+   
+    background: rgba(41, 63, 80, 0.99);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-link {
+     color: #7f7b29 !important;
+     font-weight: bold !important;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+ 
+.login-signup {
+    position: absolute;
+    right: 20px;
+}
+
+.nav-left-header {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.home-image {
+    height: 89vh;
+    width: 100%;  
+    background-image: url("../image/IMG_20190314_203039.png");
+    background: linear-gradient(to bottom right,rgba(0, 0, 255, 0.959), green);
+}
+.main{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.main h1 {
+    font-size: 5rem;
+    font-family: 'Nosifer', cursive;
+   
+}
+@media (max-width:1200px){
+    .main h1{
+        font-size: 4.5rem;
+    }
+}
+@media (max-width:770px){
+    .main h1{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:560px){
+    .main h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:415px){
+    .main h1{
+        font-size: 1.5rem;
+    }
+}
+ 
+#slogan {
+    color: rgba(255,255,255,0.6);
+}
+
+.search-box {
+    outline: none;
+    border-radius:27px;
+    border:3px solid tomato;
+    text-align: center;
+    font-size:1rem;
+    padding: 12px;
+    width: 90%;
+}
+
+
+.postContainer {
+    margin-top: 10px;
+}
+.fb-page {
+    text-align: center;
+    width:80%;
+    margin: 10px auto;
+    height: 500px;
+    border: 2px outset rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.fb-page .page {
+    max-height: 432px;
+    overflow: auto;
+}
+
+@media (min-width:992px){
+    .postContainer{
+        position: relative;
+        width: 75%; 
+        float: left;
+    }
+    .fb-page {
+        position: relative;
+        right: 10px;
+        width: 25%;
+        border: 2px inset lightblue;
+        margin-top: 10px;
+        height: 500px;
+        float:right;
+    }
+
+    .fb-page .page {
+        max-height: 389px;
+    }
+
+    .fb-page::after,section::after{
+        content: "";
+        clear:both;
+        display:table;
+    }
+}
+ 
+/*
+.post-container .post {
+    height: 270px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+ 
+.post-container .post .image #post-img {
+    width:100%;
+    height:auto !important; 
+    border-radius: 6px;   
+
+}
+*/
+
+.contact{
+    background: linear-gradient(160deg, #16c9f6 55%,#fff 0%);
+}
+.contact h1{
+    /*color: rgb(13, 228, 217);*/
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+.contact #bar{
+    width: 200px;
+    height: 3px;
+    border: 2px solid linear-gradient(to right, blue,red);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: linear-gradient(to right,blue,red)
+    
+}
+.contact .address {
+    color: rgba(255,255,255,0.91);
+    line-height: 15px;
+}
+
+#about > h1{
+    margin: 50px 0;
+}
+
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: 7px double blue;
+    border-radius: 125px;
+}
+.profile-img img {
+    width:inherit;
+    height: inherit;
+}
